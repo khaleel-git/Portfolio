@@ -1,0 +1,131 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\geometry{left=1.2cm, top=.6cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\definecolor{awesome}{HTML}{1F3A5F}
+\colorlet{awesome}{awesome}
+\setbool{acvSectionColorHighlight}{false}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{Data Engineer \enskip\cdotp\enskip ETL \enskip\cdotp\enskip Cloud Data Pipelines}
+\address{Berlin, Germany}
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\begin{document}
+
+\makecvheader[C]
+%\makecvfooter{}{Khaleel Ahmad --- CV}{\thepage}
+
+%====================
+\cvsection{Experience}
+%====================
+
+\begin{cventries}
+
+\cventry
+{Data Engineer}
+{Ericsson}
+{Lahore, Pakistan}
+{May 2022 -- Jan 2025}
+{
+\begin{cvitems}
+\item {Built and maintained Airflow and Python ETL pipelines processing 12,000+ XML files daily for telecom KPIs, serving \textasciitilde74M users.}
+\item {Optimized MSSQL queries and data workflows, reducing processing time by 30\% through indexing and query rewriting.}
+\item {Improved XML parsing throughput by 90\% using multiprocessing and batch processing techniques.}
+\item {Designed MongoDB and PostgreSQL schemas for time-series data; implemented data validation and quality checks.}
+\item {Developed Python data transformation scripts with error handling and logging for production reliability.}
+\item {Automated data pipeline deployment using Ansible and Python, reducing manual intervention by 80\%.}
+\end{cvitems}
+}
+
+\cventry
+{DevOps Engineer}
+{Ericsson}
+{Lahore, Pakistan}
+{Jul 2023 -- Jan 2025}
+{
+\begin{cvitems}
+\item {Managed AWS infrastructure (EKS, EC2, S3, RDS) supporting data processing workloads at scale.}
+\item {Built Terraform modules for IaC, enabling reproducible infrastructure for data pipelines.}
+\item {Deployed Prometheus and ELK stack for pipeline monitoring and performance visibility.}
+\item {Set up CI/CD pipelines using GitHub Actions for automated data pipeline deployments.}
+\end{cvitems}
+}
+
+\cventry
+{Data \& DevOps Engineer}
+{HelloApp PVT LTD}
+{Remote}
+{Jan 2020 -- Jul 2022}
+{
+\begin{cvitems}
+\item {Designed and maintained data processing infrastructure across multi-cloud environments.}
+\item {Automated server provisioning and data pipeline deployment with Bash and Python scripts.}
+\item {Implemented monitoring and alerting for 50+ data processing applications, maintaining 99.9\% uptime.}
+\item {Documented data pipeline processes and runbooks for team knowledge sharing.}
+\end{cvitems}
+}
+
+\end{cventries}
+
+%====================
+\cvsection{Education}
+%====================
+
+\begin{cvskills}
+\cvskill{M.S. Artificial Intelligence}{BTU Cottbus-Senftenberg, Germany \hfill 2025 -- Present}
+\cvskill{B.S. Computer Science}{ITU, Pakistan \hfill 2016 -- 2021}
+\end{cvskills}
+
+%====================
+\cvsection{Technical Skills}
+%====================
+
+\begin{cvskills}
+
+\cvskill{Data Processing}{Apache Airflow, Python, ETL, Data Pipelines, Batch Processing}
+\cvskill{Databases}{PostgreSQL, MSSQL, MongoDB, Redis, Data Warehousing}
+\cvskill{Cloud \& Data Tools}{AWS (S3, RDS, EC2), Kubernetes, Docker, Pandas, NumPy}
+\cvskill{Infrastructure as Code}{Terraform, Ansible, Bash, Python}
+\cvskill{Data Quality}{Data Validation, Schema Design, Query Optimization, Logging}
+\cvskill{CI/CD}{GitHub Actions, Jenkins, Automated Deployments}
+
+\end{cvskills}
+
+%====================
+\cvsection{Certifications}
+%====================
+
+\begin{cvhonors}
+\cvhonor{Certified Kubernetes Administrator (CKA)}{Linux Foundation}{}{2024}
+\cvhonor{Linux Foundation Certified Sysadmin (LFCS)}{Linux Foundation}{}{2023}
+\end{cvhonors}
+
+%====================
+\cvsection{Languages}
+%====================
+
+\begin{cvskills}
+\cvskill{English}{C1}
+\cvskill{German}{B1}
+\cvskill{Urdu}{Native}
+\end{cvskills}
+
+\end{document}

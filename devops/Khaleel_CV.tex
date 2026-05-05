@@ -1,0 +1,168 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.2cm, top=.5cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+\definecolor{awesome}{HTML}{1F3A5F}
+\colorlet{awesome}{awesome}
+\definecolor{sectioncolor}{HTML}{1F3A5F}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\usepackage{needspace}
+
+% Override section heading color to navy blue
+\renewcommand{\cvsection}[1]{%
+  \vspace{\acvSectionTopSkip}
+  \phantomsection{}
+  {\fontsize{16pt}{1em}\bodyfont\bfseries\color{sectioncolor}\MakeUppercase{#1}}\\[-2mm]
+  {\color{sectioncolor}\hrule}
+  \vspace{\acvSectionContentTopSkip}
+}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{DevOps Engineer {\enskip\cdotp\enskip} CKA {\enskip\cdotp\enskip} AWS \& Kubernetes}
+\address{Berlin, Germany}
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\begin{document}
+
+\makecvheader[C]
+\makecvfooter{}{Khaleel Ahmad~~~·~~~Résumé}{\thepage}
+
+\cvsection{Experience}
+
+\begin{cventries}
+
+  \cventry
+    {DevOps Engineer}
+    {Ericsson}
+    {Lahore, Pakistan}
+    {Jul 2023 -- Jan 2025}
+    {
+      \begin{cvitems}
+        \item {Deployed AWS EKS clusters for Zain Iraq's 4G/5G KPI reporting serving \textbf{74M+ subscribers} and managed upgrades without downtime.}
+        \item {Wrote Terraform modules for EKS, RDS, S3, ALB, and IAM and cut environment provisioning from \textbf{1 to 2 days down to 20 minutes}.}
+        \item {Set up GitHub Actions and ArgoCD for GitOps deployments and cut release cycle time by \textbf{60\%}.}
+        \item {Set up Prometheus, Grafana, and ELK with alerting rules for service health and reduced incident detection time by \textbf{50\%}.}
+        \item {Built Flask microservices with MongoDB for internal reporting and resolved latency issues causing \textbf{40\% slower} API response under load.}
+        \item {Handled IAM design and Active Directory integration and set up VPN-based ingestion pipelines for XML data into AWS S3.}
+        \item {Onboarded 3 engineers onto Kubernetes and GitOps and wrote internal runbooks still used by the team today.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Data Engineer}
+    {Ericsson}
+    {Lahore, Pakistan}
+    {May 2022 -- Jun 2023}
+    {
+      \begin{cvitems}
+        \item {Built Airflow pipelines in Python to process \textbf{12,000+ XML files daily} representing Jazz Pakistan network tower KPIs.}
+        \item {Automated MSSQL workflows with Python and rewrote slow T-SQL queries, cutting overnight batch processing time by \textbf{30\%}.}
+        \item {Switched XML parsing from sequential to multiprocessing and sped up throughput by \textbf{90\%} on the same hardware.}
+        \item {Managed VMware ESXi 6/7 and vCenter at Jazz data center and handled RAID, VM provisioning, and HPE iLO access.}
+        \item {Wrote Ansible playbooks using VMware Galaxy modules to automate OS config and software installs across the VM fleet.}
+        \item {Delivered Delta Scanner, Baseline Comparator, and Cell Comparator tools used daily by the network ops team.}
+        \item {Worked with Evernex on-site to swap failed HPE drives and PSUs through two hardware failure incidents.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {DevOps Engineer}
+    {Hello App}
+    {Remote, Singapore}
+    {Jan 2020 -- Jul 2022}
+    {
+      \begin{cvitems}
+        \item {Kept \textbf{50+ applications} running across AWS, GCP, Azure, and DigitalOcean at \textbf{99.9\% uptime} over two years.}
+        \item {Wrote Bash and Python scripts to automate server setup and deployments, cutting provisioning time by \textbf{60\%}.}
+        \item {Managed 50+ production websites on WHM/cPanel, CloudPanel, and ISPConfig and handled SSL, domains, and server config.}
+        \item {Deployed Django, Flask, and WordPress apps across cloud providers with nginx load balancing and CDN.}
+        \item {Connected REST APIs and third-party services between platforms and kept data flows reliable across vendors.}
+        \item {Handled Linux server security including firewall rules, patch cycles, and incident response in production.}
+        \item {Wrote deployment runbooks and onboarding docs used by new team members to get up to speed independently.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+\cvsection{Education}
+
+\begin{cvskills}
+  \cvskill{M.S. Artificial Intelligence}{BTU Cottbus-Senftenberg, Germany \hfill 2025 -- Present}
+  \cvskill{B.S. Electrical Engineering}{Information Technology University (ITU), Pakistan \hfill 2016 -- 2021}
+\end{cvskills}
+
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+  \cvskill{Container \& Orchestration}{Kubernetes \textbullet{} AWS EKS \textbullet{} OpenShift \textbullet{} K3S \textbullet{} Helm \textbullet{} Kustomize \textbullet{} Docker \textbullet{} Docker Swarm}
+  \cvskill{IaC \& Automation}{Terraform \textbullet{} Ansible \textbullet{} Ansible Galaxy \textbullet{} Bash \textbullet{} Python \textbullet{} HCL \textbullet{} Jinja2}
+  \cvskill{CI/CD \& GitOps}{GitHub Actions \textbullet{} ArgoCD \textbullet{} Azure DevOps \textbullet{} Jenkins \textbullet{} GitLab CI \textbullet{} GitOps \textbullet{} SonarQube}
+  \cvskill{Cloud Platforms}{AWS (EKS, ECS, EC2, S3, RDS, ALB, IAM, CloudFront) \textbullet{} Azure \textbullet{} GCP \textbullet{} DigitalOcean}
+  \cvskill{Observability}{Prometheus \textbullet{} Grafana \textbullet{} ELK Stack \textbullet{} Azure Monitor \textbullet{} SNMP \textbullet{} Alertmanager}
+  \cvskill{Data Platforms}{Azure Databricks \textbullet{} Apache Airflow \textbullet{} Apache Spark \textbullet{} PySpark}
+  \cvskill{Systems \& Virtualization}{Linux \textbullet{} VMware ESXi/vCenter \textbullet{} HPE iLO \textbullet{} RAID \textbullet{} Networking}
+  \cvskill{Programming}{Python \textbullet{} Bash \textbullet{} C/C++ \textbullet{} Java \textbullet{} SQL \textbullet{} Django \textbullet{} Flask}
+  \cvskill{Databases}{MSSQL \textbullet{} PostgreSQL \textbullet{} MongoDB \textbullet{} Redis \textbullet{} Oracle}
+\end{cvskills}
+
+\needspace{8\baselineskip}
+\cvsection{Certifications}
+
+\begin{cvhonors}
+  \cvhonor{Certified Kubernetes Administrator (CKA)}{Linux Foundation}{}{2024}
+  \cvhonor{Linux Foundation Certified Sysadmin (LFCS)}{Linux Foundation}{}{2023}
+  \cvhonor{Containerized Applications on AWS}{Amazon Web Services}{}{2023}
+  \cvhonor{Getting Started with GKE}{Google Cloud}{}{2023}
+  \cvhonor{Container \& Kubernetes Essentials v2}{IBM}{}{2023}
+  \cvhonor{Ansible for Network Automation}{Cisco}{}{2022}
+\end{cvhonors}
+
+\cvsection{Projects}
+
+\begin{cventries}
+  \cventry
+    {Tech Migration: Ericsson GSC China to AWS}
+    {Ericsson}
+    {}
+    {2023 -- 2024}
+    {
+      \begin{cvitems}
+        \item {Moved Zain Iraq KPI reporting from manual laptop workflows to AWS EKS using Terraform, ArgoCD, and GitHub Actions.}
+        \item {Containerized legacy Python scripts and set up Prometheus and Grafana so the team could operate services independently.}
+      \end{cvitems}
+    }
+  \cventry
+    {Bare Metal Infrastructure: Jazz Data Center}
+    {Ericsson}
+    {}
+    {2022 -- 2023}
+    {
+      \begin{cvitems}
+        \item {Set up HPE bare-metal servers with VMware ESXi and vCenter and built SNMP monitoring and Ansible automation for the VM fleet.}
+        \item {Built KPI tools (Delta Scanner, Baseline Comparator) the network ops team used daily to spot anomalies across 12,000+ towers.}
+      \end{cvitems}
+    }
+\end{cventries}
+
+\cvsection{Languages}
+
+\begin{cvskills}
+  \cvskill{English}{C1 Professional}
+  \cvskill{German}{B1}
+  \cvskill{Urdu}{Native}
+\end{cvskills}
+
+\end{document}

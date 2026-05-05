@@ -1,0 +1,134 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt}
+
+\geometry{left=1.2cm, top=.6cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\definecolor{awesome}{HTML}{1F3A5F}
+\colorlet{awesome}{awesome}
+\setbool{acvSectionColorHighlight}{false}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{Linux System Administrator \enskip\cdotp\enskip LFCS \enskip\cdotp\enskip Infrastructure}
+\address{Berlin, Germany}
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\begin{document}
+
+\makecvheader[C]
+%\makecvfooter{}{Khaleel Ahmad --- CV}{\thepage}
+
+%====================
+\cvsection{Experience}
+%====================
+
+\begin{cventries}
+
+\cventry
+{DevOps Engineer}
+{Ericsson}
+{Lahore, Pakistan}
+{Jul 2023 -- Jan 2025}
+{
+\begin{cvitems}
+\item {Managed AWS infrastructure (EKS, EC2, S3, RDS, IAM) supporting production workloads serving \textasciitilde74M users.}
+\item {Administered Linux systems at scale, performing security patching, kernel updates, and performance tuning.}
+\item {Built and maintained Terraform IaC modules for reproducible infrastructure provisioning and disaster recovery.}
+\item {Configured and deployed Prometheus, Grafana, and ELK monitoring stacks with custom dashboards and alerting.}
+\item {Managed Kubernetes clusters (EKS) including node provisioning, upgrades, and lifecycle management without downtime.}
+\item {Implemented security hardening: firewall rules, SSH key management, IAM policies, and compliance controls.}
+\end{cvitems}
+}
+
+\cventry
+{Data Engineer}
+{Ericsson}
+{Lahore, Pakistan}
+{May 2022 -- Jun 2023}
+{
+\begin{cvitems}
+\item {Managed VMware ESXi and vCenter infrastructure on bare metal systems, administering 50+ VMs.}
+\item {Automated VM provisioning and configuration using Ansible and Python for infrastructure consistency.}
+\item {Maintained Linux systems running data pipelines, optimizing system resources for performance.}
+\item {Implemented automated backups and disaster recovery procedures across virtualized infrastructure.}
+\item {Troubleshot system-level issues and optimized network configurations for data transfer efficiency.}
+\end{cvitems}
+}
+
+\cventry
+{DevOps Engineer}
+{HelloApp PVT LTD}
+{Remote}
+{Jan 2020 -- Jul 2022}
+{
+\begin{cvitems}
+\item {Managed 50+ Linux servers across multi-cloud environments, maintaining 99.9\% uptime and system availability.}
+\item {Implemented security patching and vulnerability management, reducing security incidents by 95\%.}
+\item {Automated server provisioning and configuration management using Bash and Python scripts.}
+\item {Configured DNS, NTP, SSL/TLS certificates, and network services for production infrastructure.}
+\item {Documented system procedures, runbooks, and disaster recovery plans for team knowledge management.}
+\item {Performed regular capacity planning, monitoring, and performance optimization across infrastructure.}
+\end{cvitems}
+}
+
+\end{cventries}
+
+%====================
+\cvsection{Education}
+%====================
+
+\begin{cvskills}
+\cvskill{M.S. Artificial Intelligence}{BTU Cottbus-Senftenberg, Germany \hfill 2025 -- Present}
+\cvskill{B.S. Computer Science}{ITU, Pakistan \hfill 2016 -- 2021}
+\end{cvskills}
+
+%====================
+\cvsection{Technical Skills}
+%====================
+
+\begin{cvskills}
+
+\cvskill{Linux Administration}{Linux Kernel, System Configuration, User Management, Permissions, Networking}
+\cvskill{System Services}{Systemd, Service Management, Log Management, Cron/Scheduling, SSH, DNS, NTP}
+\cvskill{Security}{Firewall Rules (iptables/firewalld), SSH Hardening, SSL/TLS, User/File Security, Compliance}
+\cvskill{Infrastructure as Code}{Terraform, Ansible, Bash, Python, Automated Deployment}
+\cvskill{Monitoring \& Logging}{Prometheus, Grafana, ELK Stack, System Metrics, Log Aggregation}
+\cvskill{Virtualization}{AWS, Kubernetes (EKS), Docker, VMware ESXi/vCenter}
+
+\end{cvskills}
+
+%====================
+\cvsection{Certifications}
+%====================
+
+\begin{cvhonors}
+\cvhonor{Linux Foundation Certified Sysadmin (LFCS)}{Linux Foundation}{}{2023}
+\cvhonor{Certified Kubernetes Administrator (CKA)}{Linux Foundation}{}{2024}
+\end{cvhonors}
+
+%====================
+\cvsection{Languages}
+%====================
+
+\begin{cvskills}
+\cvskill{English}{C1}
+\cvskill{German}{B1}
+\cvskill{Urdu}{Native}
+\end{cvskills}
+
+\end{document}

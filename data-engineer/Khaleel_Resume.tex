@@ -1,0 +1,188 @@
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+% https://github.com/posquit0/Awesome-CV
+% CC BY-SA 4.0
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.2cm, top=.5cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+
+\colorlet{awesome}{awesome-red}
+
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+% Save your profile photo as "profile.jpg" in the same directory
+\photo[circle,noedge,left]{profile}
+
+\name{Khaleel}{Ahmad}
+\position{Data Engineer {\enskip\cdotp\enskip} M.S. Artificial Intelligence}
+\address{Berlin, Germany}
+
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {\today}
+  {Khaleel Ahmad~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+% PROFILE
+%-------------------------------------------------------------------------------
+\cvsection{Profile}
+
+\begin{cvparagraph}
+Data Engineer with 3 years at Ericsson building ETL pipelines, SQL workflows, and analytics dashboards for Jazz (74M+ subscribers). Proficient in Python, Apache Airflow, MSSQL, and Power BI. Pursuing M.S.\ in Artificial Intelligence at BTU Cottbus-Senftenberg.
+\end{cvparagraph}
+
+
+%-------------------------------------------------------------------------------
+% EXPERIENCE
+%-------------------------------------------------------------------------------
+\cvsection{Experience}
+
+\begin{cventries}
+
+  %---------------------------------------------------------
+  \cventry
+    {Data Engineer}
+    {Ericsson}
+    {Lahore, Pakistan}
+    {Aug 2022 -- Feb 2025}
+    {
+      \cvsubentry{}{Jazz Network Performance Management Analytics}{Aug 2022 -- Apr 2024}{}
+      \begin{cvitems}
+        \item {Built end-to-end ETL pipelines in Apache Airflow at cell/day/hour granularity across MSSQL databases.}
+        \item {Delivered Power BI dashboards and HTML reports on top of processed network data, used by the Jazz operations team.}
+        \item {Reduced T-SQL query execution time by \textbf{45\%} through index tuning and query plan analysis on large network datasets.}
+        \item {Managed VMware/vCenter, RAID, and HPE server environments with \textbf{99.5\%} uptime.}
+      \end{cvitems}
+      \cvsubentry{}{Infrastructure Migration: Ericsson GSC China to AWS}{Mar 2023 -- Feb 2025}{}
+      \begin{cvitems}
+        \item {Migrated \textbf{40+ production} data workflows from Ericsson GSC China to AWS and internal servers with \textbf{zero downtime}.}
+        \item {Rebuilt all pipelines in Apache Airflow and Python from scratch, cutting manual processing steps by \textbf{40\%}.}
+        \item {Coordinated the migration with network, database, and security teams and delivered \textbf{two weeks ahead of schedule}.}
+      \end{cvitems}
+    }
+
+  %---------------------------------------------------------
+  \cventry
+    {Linux System Admin \& Python Developer}
+    {Hello App}
+    {Remote}
+    {Jan 2020 -- Jul 2022}
+    {
+      \begin{cvitems}
+        \item {Managed infrastructure for \textbf{50+ production apps} across AWS, GCP, Azure, Digital Ocean, Vultr, and Linode at \textbf{99.9\%} uptime.}
+        \item {Automated provisioning for 50+ websites using WHM/cPanel, CloudPanel, and ISPConfig, cutting setup time by \textbf{60\%}.}
+      \end{cvitems}
+    }
+
+  %---------------------------------------------------------
+  \cventry
+    {Founder \& Developer}
+    {ApkFuel.com}
+    {Remote}
+    {Mar 2018 -- Oct 2024}
+    {
+      \begin{cvitems}
+        \item {Built a Python scraper using Selenium, BeautifulSoup, and Scrapy to pull and serve Android app data from Google Play.}
+        \item {Grew the site to \textbf{96K monthly visitors} through SEO, content, and technical optimization; \textbf{sold on Flippa for \$18K} in 2024.}
+        \item {Grew a YouTube channel covering Android and tech content to \textbf{49K subscribers}.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+% EDUCATION
+%-------------------------------------------------------------------------------
+\cvsection{Education}
+
+\begin{cventries}
+
+  \cventry
+    {M.S. in Artificial Intelligence}
+    {BTU Cottbus-Senftenberg}
+    {Cottbus, Germany}
+    {2025 -- Present}
+    {}
+
+  \cventry
+    {B.S. in Computer Science}
+    {Information Technology University (ITU)}
+    {Lahore, Pakistan}
+    {2016 -- 2021}
+    {}
+
+\end{cventries}
+
+
+%-------------------------------------------------------------------------------
+% SKILLS
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+
+  \cvskill
+    {Languages}
+    {Python \textbullet{} SQL (T-SQL, PostgreSQL, MySQL) \textbullet{} Java \textbullet{} Bash / Zsh \textbullet{} HCL (Terraform) \textbullet{} C / C++}
+
+  \cvskill
+    {Data Engineering}
+    {Apache Airflow \textbullet{} ETL Pipelines \textbullet{} Power BI \textbullet{} Distributed Processing \textbullet{} Real-time Analytics}
+
+  \cvskill
+    {Databases}
+    {MSSQL \textbullet{} PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB \textbullet{} Query Optimization \textbullet{} Replication}
+
+  \cvskill
+    {Cloud \& DevOps}
+    {AWS \textbullet{} GCP \textbullet{} Azure \textbullet{} Kubernetes \textbullet{} Docker \textbullet{} Terraform \textbullet{} Ansible \textbullet{} GitHub Actions}
+
+  \cvskill
+    {Monitoring}
+    {Prometheus \textbullet{} Grafana \textbullet{} SNMP \textbullet{} SolarWinds}
+
+\end{cvskills}
+
+
+%-------------------------------------------------------------------------------
+% LANGUAGES
+%-------------------------------------------------------------------------------
+\cvsection{Languages}
+
+\begin{cvskills}
+
+  \cvskill{English}{C1 Professional}
+  \cvskill{German}{B1 (Enrolled)}
+  \cvskill{Urdu}{Native}
+
+\end{cvskills}
+
+
+\end{document}
