@@ -94,7 +94,6 @@ Each CV is optimized for Applicant Tracking Systems (ATS):
 ## 📧 Contact
 
 - Email: khaleel.eu@gmail.com
-- Phone: +49 155 63611714
 - Website: https://khaleel.eu
 
 ---
