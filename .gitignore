@@ -21,3 +21,13 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+### BTU Sensitive Documents ###
+## BTU enrollment, transcript, and academic records
+*Transcipt of Records*
+*Transcript of Records*
+*Studienbescheinigung*
+*Certificate of Enrolment*
+*Notenübersicht*
+*BTU*.pdf
+Khaleel_Certificates_References.pdf
+
