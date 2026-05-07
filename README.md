@@ -9,22 +9,14 @@ This repo contains CV and cover letter templates built with [Awesome CV](https:/
 ## How to Use
 
 Pick the role folder that matches your target position (e.g., `devops/`, `data-engineer/`, `linux-sysadmin/`). Each contains:
-- `Khaleel_CV.tex` – Full CV
-- `Khaleel_Resume.tex` – One-page resume
-- `Khaleel_CoverLetter.tex` – Cover letter template
+- `YourName_CV.tex` – Full CV
+- `YourName_Resume.tex` – One-page resume
+- `YourName_CoverLetter.tex` – Cover letter template
 - `profile.jpg` – Professional photo (included in some folders)
 
 Edit the `.tex` files with your own information and build to PDF.
 
-## Renaming Your Files
-
-Rename the files with your own name:
-- `Khaleel_CV.tex` → `YourName_CV.tex` – Full CV
-- `Khaleel_Resume.tex` → `YourName_Resume.tex` – One-page resume
-- `Khaleel_CoverLetter.tex` → `YourName_CoverLetter.tex` – Cover letter template
-- `profile.jpg` – Professional photo (update if included in folder)
-
-Then edit the `.tex` files with your own information and build to PDF.
+Edit the `.tex` files with your own information and build to PDF.
 
 ## Building Your CV
 
@@ -49,10 +41,10 @@ Download and install [MiKTeX](https://miktex.org/download)
 
 Then compile:
 ```bash
-xelatex Khaleel_CV.tex
+xelatex YourName_CV.tex
 ```
 
-This generates `Khaleel_CV.pdf`.
+This generates `YourName_CV.pdf`.
 
 ## Customization
 
