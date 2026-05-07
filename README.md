@@ -6,9 +6,6 @@ Customizable CV and cover letter templates for targeted job applications.
 
 This repo contains CV and cover letter templates built with [Awesome CV](https://github.com/posquit0/Awesome-CV). Each folder represents a specific role version you can customize for your needs.
 
-- **Education:** M.S. Artificial Intelligence (BTU Cottbus-Senftenberg, 2025–Present)
-- **Location:** Berlin, Germany
-
 ## How to Use
 
 Pick the role folder that matches your target position (e.g., `devops/`, `data-engineer/`, `linux-sysadmin/`). Each contains:
@@ -18,6 +15,16 @@ Pick the role folder that matches your target position (e.g., `devops/`, `data-e
 - `profile.jpg` – Professional photo (included in some folders)
 
 Edit the `.tex` files with your own information and build to PDF.
+
+## Renaming Your Files
+
+Rename the files with your own name:
+- `Khaleel_CV.tex` → `YourName_CV.tex` – Full CV
+- `Khaleel_Resume.tex` → `YourName_Resume.tex` – One-page resume
+- `Khaleel_CoverLetter.tex` → `YourName_CoverLetter.tex` – Cover letter template
+- `profile.jpg` – Professional photo (update if included in folder)
+
+Then edit the `.tex` files with your own information and build to PDF.
 
 ## Building Your CV
 
@@ -67,15 +74,6 @@ The `profile.jpg` file is referenced in the CV header for a professional photo. 
 
 Built with [Awesome CV](https://github.com/posquit0/Awesome-CV)
 
-Built with [Awesome CV](https://github.com/posquit0/Awesome-CV) template
-
-[**LaTeX**](https://www.latex-project.org) is a fantastic typesetting program that a lot of people use these days, especially the math and computer science people in academia.
-
-[**FontAwesome6 LaTeX Package**](https://github.com/braniii/fontawesome) is a LaTeX package that provides access to the [Font Awesome 6](https://fontawesome.com/v6/icons) icon set.
-
-[**Roboto**](https://github.com/google/roboto) is the default font on Android and ChromeOS, and the recommended font for Google’s visual language, Material Design.
-
-[**Source Sans Pro**](https://github.com/adobe-fonts/source-sans-pro) is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.
 
 
 
