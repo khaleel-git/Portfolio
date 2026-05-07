@@ -1,186 +1,71 @@
-# Khaleel Ahmad – Professional CV Repository
+# CV Repository
 
-A collection of role-specific, ATS-optimized CVs and cover letters for targeted job applications.
+Customizable CV and cover letter templates for targeted job applications.
 
----
+## About
 
-## 👤 About
+This repo contains CV and cover letter templates built with [Awesome CV](https://github.com/posquit0/Awesome-CV). Each folder represents a specific role version you can customize for your needs.
 
-This repository contains multiple CV versions tailored for different engineering positions. Each CV emphasizes relevant experience, technical expertise, and certifications for the target role while maintaining a clean, professional structure built on the [Awesome CV](https://github.com/posquit0/Awesome-CV) LaTeX template.
-
-**Quick Profile:**
 - **Education:** M.S. Artificial Intelligence (BTU Cottbus-Senftenberg, 2025–Present)
 - **Location:** Berlin, Germany
-- **Links:** [LinkedIn](https://linkedin.com/in/khaleel-ahmad) | [GitHub](https://github.com/khaleel-git)
 
----
+## How to Use
 
-## 📂 CV Versions
+Pick the role folder that matches your target position (e.g., `devops/`, `data-engineer/`, `linux-sysadmin/`). Each contains:
+- `Khaleel_CV.tex` – Full CV
+- `Khaleel_Resume.tex` – One-page resume
+- `Khaleel_CoverLetter.tex` – Cover letter template
+- `profile.jpg` – Professional photo (included in some folders)
 
-Each role directory contains a complete, optimized CV package:
+Edit the `.tex` files with your own information and build to PDF.
 
-| Role | Focus | Key Technologies |
-|------|-------|------------------|
-| **DevOps Engineer** | Cloud infrastructure, automation, CI/CD | AWS, Kubernetes, Terraform, Docker, GitHub Actions |
-| **Data Engineer** | ETL pipelines, data processing, analytics | Apache Airflow, Python, PostgreSQL, MongoDB, Power BI |
-| **Linux System Admin** | Infrastructure management, security, monitoring | Linux, systemd, firewall, bash scripting, Ansible |
+## Building Your CV
 
----
+### Option 1: Online (Recommended)
+Use [Overleaf](https://www.overleaf.com/) – upload the `.tex` files and compile directly in the browser. No installation needed.
 
-## 📁 Repository Structure
+### Option 2: Local Installation
+Install `xelatex` on your system:
 
-```
-Portfolio/
-├── devops/                          # DevOps Engineer CV package
-│   ├── Khaleel_CV.tex              # Full CV (2-3 pages)
-│   ├── Khaleel_Resume.tex          # Concise resume (1 page)
-│   ├── Khaleel_CoverLetter.tex     # Cover letter template
-│   └── awesome-cv.cls              # LaTeX template class
-├── data-engineer/                   # Data Engineer CV package
-├── linux-sysadmin/                  # Linux SysAdmin CV package
-├── examples/                        # Template reference examples
-├── .gitignore                       # Version control settings
-├── Makefile                         # Build automation
-└── README.md                        # This file
-```
-
----
-
-## 🏗️ Building CVs
-
-### Prerequisites
-- **TeX Live** (macOS/Linux) or **MiKTeX** (Windows)
-- `xelatex` compiler
-- GNU `make` (optional but recommended)
-
-### Quick Build
-
-Build a specific role's CV:
+**macOS:**
 ```bash
-cd devops && make
-cd data-engineer && make
-cd linux-sysadmin && make
+brew install basictex
 ```
 
-Or compile manually:
+**Ubuntu/Debian:**
 ```bash
-cd devops
+sudo apt-get install texlive-xetex
+```
+
+**Windows:**
+Download and install [MiKTeX](https://miktex.org/download)
+
+Then compile:
+```bash
 xelatex Khaleel_CV.tex
 ```
 
-Output: `Khaleel_CV.pdf` in the respective directory
+This generates `Khaleel_CV.pdf`.
 
-### Build All Documents
+## Customization
 
-```bash
-make
-```
+Open the `.tex` file in any text editor and modify:
+- Contact information
+- Work experience and achievements
+- Technical skills
+- Education details
+- Add/remove sections as needed
 
----
+The `profile.jpg` file is referenced in the CV header for a professional photo. Update the reference or replace the image file.
 
-## ✏️ Customization Guide
+## Links
 
-### File Structure
-Each role directory contains:
-- **`Khaleel_CV.tex`** – Full curriculum vitae with complete work history and skills
-- **`Khaleel_Resume.tex`** – Single-page resume for quick screening
-- **`Khaleel_CoverLetter.tex`** – Customizable cover letter template
-- **`awesome-cv.cls`** – LaTeX styling (modify carefully)
-
-### Editing Tips
-1. Open `.tex` files in any text editor (VS Code, Sublime Text, etc.)
-2. Modify sections:
-   - **Job descriptions** – Adjust to match job postings
-   - **Skills section** – Emphasize relevant technologies
-   - **Experience order** – Lead with most relevant roles
-   - **Keywords** – Include industry terminology for ATS systems
-3. Rebuild PDF to preview changes
-
-### Common Changes
-```latex
-% Update contact info
-\email{your.email@example.com}
-\mobile{+49 123 456 7890}
-
-% Modify job title emphasis
-\cventry{Period}{Title}{\textbf{Company}}{Location}{Achievement}
-
-% Add technologies
-\cvskill{Python}{NumPy, Pandas, PyTorch, Scikit-learn}
-```
+- [LinkedIn](https://linkedin.com/in/khaleel-ahmad)
+- [GitHub](https://github.com/khaleel-git)
 
 ---
 
-## 🎯 Role Details
-
-### DevOps Engineer
-- **Experience:** Cloud infrastructure, container orchestration, CI/CD pipelines
-- **Key Certifications:** CKA (Certified Kubernetes Administrator), LFCS (Linux Foundation)
-- **Technologies:** AWS, Kubernetes, Docker, Terraform, GitHub Actions, Prometheus, Grafana
-- **Focus:** Automation, scalability, reliability
-
-### Data Engineer
-- **Experience:** ETL pipeline design, data warehouse architecture, analytics infrastructure
-- **Key Skills:** Python, SQL, data modeling, performance optimization
-- **Tools:** Apache Airflow, PostgreSQL, MongoDB, Power BI, PySpark
-- **Focus:** Data quality, pipeline optimization, scalability
-
-### Linux System Administrator
-- **Experience:** Server administration, system hardening, infrastructure monitoring
-- **Key Certifications:** LFCS (Linux Foundation), additional cloud certifications
-- **Technologies:** Linux kernel, systemd, bash/Python scripting, Ansible, monitoring tools
-- **Focus:** Security, performance tuning, automation
-
----
-
-## 🔍 ATS Optimization
-
-All CVs are optimized for Applicant Tracking Systems:
-
-✅ **Clean Structure** – Minimal special characters, standard formatting  
-✅ **Keywords** – Industry-standard terminology matching job descriptions  
-✅ **Metrics** – Quantified achievements and impact (percentages, numbers, scale)  
-✅ **Clarity** – Action-oriented language with strong verbs  
-✅ **Parseable Layout** – Logical sections, consistent formatting
-
-**Best Practice:** Before submitting, validate with [JobScan](https://www.jobscan.co/) against the target job posting.
-
----
-
-## 📋 Document Checklist
-
-**Before Applying:**
-- [ ] Select the appropriate role-specific CV
-- [ ] Verify PDF renders correctly
-- [ ] Customize cover letter for the specific company
-- [ ] Update keywords to match job posting
-- [ ] Check for typos and formatting consistency
-- [ ] Test ATS compatibility if required
-
----
-
-## 🔐 Privacy & Security
-
-Sensitive personal documents (certificates, transcripts, enrollment records) are excluded from this repository and protected via `.gitignore`. If you fork this project, ensure similar security practices for your own credentials.
-
----
-
-## 📞 Contact & Links
-
-**Email:** khaleel.eu@gmail.com  
-**LinkedIn:** [linkedin.com/in/khaleel-ahmad](https://linkedin.com/in/khaleel-ahmad)  
-**GitHub:** [github.com/khaleel-git](https://github.com/khaleel-git)
-
----
-
-## 📜 License
-
-This project uses the [Awesome CV](https://github.com/posquit0/Awesome-CV) template. See the original repository for license details.
-
----
-
-**Last Updated:** May 2026  
-**Format:** LaTeX (xelatex)
+Built with [Awesome CV](https://github.com/posquit0/Awesome-CV)
 
 Built with [Awesome CV](https://github.com/posquit0/Awesome-CV) template
 
