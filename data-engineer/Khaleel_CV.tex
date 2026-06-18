@@ -3,39 +3,60 @@
 
 \documentclass[11pt, a4paper]{awesome-cv}
 
-\usepackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=0pt}
-
-\geometry{left=1.2cm, top=.6cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+\geometry{left=1.2cm, top=.5cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
 
 \fontdir[fonts/]
-
-\definecolor{awesome}{HTML}{1F3A5F}
-\colorlet{awesome}{awesome}
+\colorlet{awesome}{awesome-red}
 \setbool{acvSectionColorHighlight}{false}
-
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \renewcommand{\acvSectionTopSkip}{2mm}
 \renewcommand{\acvSectionContentTopSkip}{1.5mm}
 
 \photo[circle,noedge,left]{profile}
 \name{Khaleel}{Ahmad}
-\position{Data Engineer \enskip\cdotp\enskip ETL \enskip\cdotp\enskip Cloud Data Pipelines}
+\position{Data Science \& AI {\enskip\cdotp\enskip} Python {\enskip\cdotp\enskip} Deep Learning {\enskip\cdotp\enskip} LLMs}
 \address{Berlin, Germany}
+
 \mobile{+49 155 63611714}
 \email{khaleel.eu@gmail.com}
-\homepage{https://khaleel.eu}
 \github{khaleel-git}
 \linkedin{khaleel-ahmad}
 
 \begin{document}
 
 \makecvheader[C]
-%\makecvfooter{}{Khaleel Ahmad --- CV}{\thepage}
+\makecvfooter{}{Khaleel Ahmad~~~·~~~Lebenslauf}{\thepage}
 
-%====================
-\cvsection{Experience}
-%====================
+\cvsection{Profile}
+
+\begin{cvparagraph}
+M.S. Artificial Intelligence student at BTU Cottbus-Senftenberg with 3+ years of production experience in Python data engineering, big data pipeline architecture, and automated anomaly detection. Active coursework in deep learning (PyTorch), LLM frameworks (Transformers, LangChain), generative AI, and distributed systems. At Ericsson, built and operated large-scale data processing pipelines on AWS serving telecom systems at production scale.
+\end{cvparagraph}
+
+\cvsection{Education}
+
+\begin{cventries}
+\cventry
+{M.S. in Artificial Intelligence}
+{BTU Cottbus-Senftenberg}
+{Germany}
+{2025 -- Present}
+{
+\begin{cvitems}
+\item {Focus: Deep Learning, LLMs, Generative AI, Signal Processing, Distributed Systems.}
+\item {Active coursework: PyTorch, Transformers, LangChain, RAG, agentic workflows, time series analysis.}
+\end{cvitems}
+}
+
+\cventry
+{B.S. in Computer Science}
+{Information Technology University (ITU)}
+{Pakistan}
+{2016 -- 2021}
+{}
+\end{cventries}
+
+\cvsection{Professional Experience}
 
 \begin{cventries}
 
@@ -43,88 +64,61 @@
 {Data Engineer}
 {Ericsson}
 {Lahore, Pakistan}
-{May 2022 -- Jan 2025}
+{Aug 2022 -- Feb 2025}
 {
 \begin{cvitems}
-\item {Built and maintained Airflow and Python ETL pipelines processing 12,000+ XML files daily for telecom KPIs, serving \textasciitilde74M users.}
-\item {Optimized MSSQL queries and data workflows, reducing processing time by 30\% through indexing and query rewriting.}
-\item {Improved XML parsing throughput by 90\% using multiprocessing and batch processing techniques.}
-\item {Designed MongoDB and PostgreSQL schemas for time-series data; implemented data validation and quality checks.}
-\item {Developed Python data transformation scripts with error handling and logging for production reliability.}
-\item {Automated data pipeline deployment using Ansible and Python, reducing manual intervention by 80\%.}
+\item {Built Apache Airflow big data pipelines on AWS processing \textbf{12,000+ structured files daily} with automated anomaly detection.}
+\item {Built Python delta-detection tools (Delta Scanner, Baseline Comparator) to surface drift and generate diagnostic reports.}
+\item {Maintained AWS infrastructure (S3, EC2, RDS); optimized SQL across PostgreSQL/MSSQL, cutting runtime by \textbf{30\%}.}
+\item {Collaborated in agile cross-functional teams; authored runbooks adopted as team-wide standards.}
 \end{cvitems}
 }
 
 \cventry
-{DevOps Engineer}
-{Ericsson}
-{Lahore, Pakistan}
-{Jul 2023 -- Jan 2025}
-{
-\begin{cvitems}
-\item {Managed AWS infrastructure (EKS, EC2, S3, RDS) supporting data processing workloads at scale.}
-\item {Built Terraform modules for IaC, enabling reproducible infrastructure for data pipelines.}
-\item {Deployed Prometheus and ELK stack for pipeline monitoring and performance visibility.}
-\item {Set up CI/CD pipelines using GitHub Actions for automated data pipeline deployments.}
-\end{cvitems}
-}
-
-\cventry
-{Data \& DevOps Engineer}
-{HelloApp PVT LTD}
+{Python Developer \& Automation Engineer}
+{Hello App Pvt. Ltd.}
 {Remote}
 {Jan 2020 -- Jul 2022}
 {
 \begin{cvitems}
-\item {Designed and maintained data processing infrastructure across multi-cloud environments.}
-\item {Automated server provisioning and data pipeline deployment with Bash and Python scripts.}
-\item {Implemented monitoring and alerting for 50+ data processing applications, maintaining 99.9\% uptime.}
-\item {Documented data pipeline processes and runbooks for team knowledge sharing.}
+\item {Built data ingestion pipelines across AWS, GCP, and Azure using Python and REST APIs.}
+\item {Developed monitoring pipelines for reliable, high-volume multi-source data ingestion.}
+\item {Managed distributed cloud infrastructure for 50+ applications at \textbf{99.9\% uptime}.}
+\item {Authored technical documentation and runbooks adopted as team-wide engineering standards.}
+\end{cvitems}
+}
+
+\cventry
+{Founder \& Developer}
+{APKFuel}
+{Remote}
+{Mar 2018 -- Oct 2024}
+{
+\begin{cvitems}
+\item {Built data extraction pipelines (Selenium, BeautifulSoup, Scrapy) with automated validation.}
+\item {Designed structured storage and data management system for millions of records.}
+\item {Implemented data quality checks and validation across the full ingestion pipeline.}
+\item {Applied data-driven analytics to scale the platform to \textbf{96K monthly active users}.}
 \end{cvitems}
 }
 
 \end{cventries}
 
-%====================
-\cvsection{Education}
-%====================
-
-\begin{cvskills}
-\cvskill{M.S. Artificial Intelligence}{BTU Cottbus-Senftenberg, Germany \hfill 2025 -- Present}
-\cvskill{B.S. Computer Science}{ITU, Pakistan \hfill 2016 -- 2021}
-\end{cvskills}
-
-%====================
 \cvsection{Technical Skills}
-%====================
 
 \begin{cvskills}
-
-\cvskill{Data Processing}{Apache Airflow, Python, ETL, Data Pipelines, Batch Processing}
-\cvskill{Databases}{PostgreSQL, MSSQL, MongoDB, Redis, Data Warehousing}
-\cvskill{Cloud \& Data Tools}{AWS (S3, RDS, EC2), Kubernetes, Docker, Pandas, NumPy}
-\cvskill{Infrastructure as Code}{Terraform, Ansible, Bash, Python}
-\cvskill{Data Quality}{Data Validation, Schema Design, Query Optimization, Logging}
-\cvskill{CI/CD}{GitHub Actions, Jenkins, Automated Deployments}
-
+\cvskill{AI / Deep Learning}{PyTorch \textbullet{} Transformers \textbullet{} LangChain \textbullet{} Scikit-learn \textbullet{} CNNs \textbullet{} LLMs \textbullet{} RAG}
+\cvskill{Data Engineering}{Python (Pandas, NumPy, Xarray) \textbullet{} Apache Airflow \textbullet{} ETL Pipelines \textbullet{} Anomaly Detection}
+\cvskill{Cloud \& Infra}{AWS (S3, EC2, RDS) \textbullet{} GCP \textbullet{} Azure \textbullet{} Docker \textbullet{} Linux \textbullet{} Git}
+\cvskill{Databases}{PostgreSQL \textbullet{} MySQL \textbullet{} MSSQL \textbullet{} MongoDB}
+\cvskill{Scripting \& Tools}{Bash \textbullet{} REST APIs \textbullet{} Jupyter \textbullet{} VS Code}
 \end{cvskills}
 
-%====================
-\cvsection{Certifications}
-%====================
-
-\begin{cvhonors}
-\cvhonor{Certified Kubernetes Administrator (CKA)}{Linux Foundation}{}{2024}
-\cvhonor{Linux Foundation Certified Sysadmin (LFCS)}{Linux Foundation}{}{2023}
-\end{cvhonors}
-
-%====================
 \cvsection{Languages}
-%====================
 
 \begin{cvskills}
-\cvskill{English}{C1}
-\cvskill{German}{B1}
+\cvskill{English}{C1 Professional}
+\cvskill{German}{B1 (actively improving)}
 \cvskill{Urdu}{Native}
 \end{cvskills}
 

@@ -1,0 +1,140 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.2cm, top=.5cm, right=1.2cm, bottom=1.2cm, footskip=.5cm}
+
+\fontdir[fonts/]
+\definecolor{awesome}{HTML}{1F3A5F}
+\colorlet{awesome}{awesome}
+\definecolor{sectioncolor}{HTML}{1F3A5F}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.5mm}
+
+\renewcommand{\cvsection}[1]{%
+  \vspace{\acvSectionTopSkip}
+  \phantomsection{}
+  {\fontsize{16pt}{1em}\bodyfont\bfseries\color{sectioncolor}\MakeUppercase{#1}}\\[-2mm]
+  {\color{sectioncolor}\hrule}
+  \vspace{\acvSectionContentTopSkip}
+}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{Linux \& Windows Server Administrator {\enskip\cdotp\enskip} Cloud Infrastructure {\enskip\cdotp\enskip} VMware}
+\address{Berlin, Germany}
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\begin{document}
+
+\makecvheader[C]
+\makecvfooter{}{Khaleel Ahmad~~~·~~~Résumé}{\thepage}
+
+\cvsection{Profile}
+
+\begin{cvparagraph}
+Linux and Windows Server Administrator with 3+ years managing production servers, bare-metal VMware environments, and multi-cloud platforms. Experienced in \textbf{Linux, Windows Server 2016, Active Directory, VMware ESXi/vCenter, Ansible, Python, and Bash scripting}. Hands-on with MSSQL, FileZilla, PuTTY, SSH, and Windows-based tooling alongside cloud infrastructure at enterprise scale. Currently pursuing M.S.\ in Artificial Intelligence at BTU Cottbus-Senftenberg.
+\end{cvparagraph}
+
+\cvsection{Experience}
+
+\begin{cventries}
+
+  \cventry
+    {Linux System Administrator}
+    {Ericsson}
+    {Lahore, Pakistan}
+    {May 2022 -- Jan 2025}
+    {
+      \begin{cvitems}
+        \item {Managed VMware ESXi 6/7 and vCenter bare-metal infrastructure at Jazz data center including RAID, VM lifecycle, and HPE iLO remote access.}
+        \item {Automated VM provisioning, OS configuration, and software deployments using Ansible Galaxy VMware modules and Python scripts.}
+        \item {Performed cluster health checks using SNMP-based monitoring tools and built custom Python scripts for disk, CPU, and RAM monitoring.}
+        \item {Deployed AWS EC2 and EKS infrastructure using Terraform and Ansible, replacing manual workflows and cutting provisioning time significantly.}
+        \item {Configured network segmentation using VMware ESXi virtual switches and managed physical HPE server networking via switches.}
+        \item {Worked with Evernex on-site to replace failed HPE server components through two hardware failure incidents with minimal downtime.}
+        \item {Wrote Ansible playbooks and Bash automation scripts adopted by the team for recurring operational tasks.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Linux System Administrator}
+    {Hello App Pvt. Ltd.}
+    {Remote, Singapore}
+    {Jan 2020 -- Jul 2022}
+    {
+      \begin{cvitems}
+        \item {Administered Linux servers across \textbf{AWS, GCP, Azure, DigitalOcean, Vultr, and Linode} for 50+ applications at \textbf{99.9\% uptime}.}
+        \item {Automated server provisioning and application deployments using Bash and Python scripts, cutting setup time by \textbf{60\%}.}
+        \item {Deployed and managed 50+ production websites on WHM/cPanel, CloudPanel, and ISPConfig with SSL, DNS, and server configuration.}
+        \item {Performed Linux security hardening including firewall rules, patch management, and incident response in production environments.}
+        \item {Deployed scalable Python (Django/Flask) and WordPress applications with nginx load balancing and CDN across cloud providers.}
+        \item {Integrated REST APIs and third-party services across platforms maintaining reliable cross-system data flows at scale.}
+        \item {Wrote deployment runbooks and onboarding documentation used by new team members to get up to speed independently.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Founder \& Developer}
+    {APKFuel}
+    {Remote}
+    {Mar 2018 -- Oct 2024}
+    {
+      \begin{cvitems}
+        \item {Deployed and managed cloud infrastructure across GCP, AWS, and Azure using CloudFront, S3, and custom automation scripts.}
+        \item {Administered Linux servers independently handling all system administration, security, and maintenance tasks end-to-end.}
+        \item {Built Python and Bash automation scripts for data collection, processing, and structured storage at scale.}
+        \item {Configured and maintained web server stack including nginx, Apache, MySQL, and PHP across multiple environments.}
+        \item {Implemented monitoring and alerting for server health, disk usage, and application performance across cloud environments.}
+        \item {Handled SSL certificate management, domain configuration, and DNS setup across 10+ production domains.}
+        \item {Scaled platform to \textbf{96K monthly users} and successfully exited the project for \$18K.}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+\cvsection{Education}
+
+\begin{cvskills}
+  \cvskill{M.S. Artificial Intelligence}{BTU Cottbus-Senftenberg, Germany \hfill 2025 -- Present}
+  \cvskill{B.S. Computer Science}{Information Technology University (ITU), Pakistan \hfill 2016 -- 2021}
+\end{cvskills}
+
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+  \cvskill{Linux \& Systems}{Linux \textbullet{} Bash \textbullet{} Shell Scripting \textbullet{} Package Management \textbullet{} User Management \textbullet{} Networking}
+  \cvskill{Windows \& AD}{Windows Server 2016 \textbullet{} Active Directory \textbullet{} Group Policy \textbullet{} Hyper-V \textbullet{} Office 365 \textbullet{} WSUS \textbullet{} PuTTY \textbullet{} FileZilla}
+  \cvskill{Virtualization}{VMware ESXi/vCenter \textbullet{} HPE iLO \textbullet{} RAID \textbullet{} Docker \textbullet{} Kubernetes}
+  \cvskill{IaC \& Automation}{Terraform \textbullet{} Ansible \textbullet{} Ansible Galaxy \textbullet{} Python \textbullet{} Bash \textbullet{} Jinja2}
+  \cvskill{Cloud Platforms}{AWS \textbullet{} GCP \textbullet{} Azure \textbullet{} DigitalOcean \textbullet{} Vultr \textbullet{} Linode}
+  \cvskill{Web \& Services}{nginx \textbullet{} Apache \textbullet{} WHM/cPanel \textbullet{} CloudPanel \textbullet{} ISPConfig \textbullet{} SSL/TLS}
+  \cvskill{Monitoring}{Prometheus \textbullet{} Grafana \textbullet{} SNMP \textbullet{} ELK Stack \textbullet{} Alertmanager}
+  \cvskill{Databases}{MSSQL \textbullet{} PostgreSQL \textbullet{} MySQL \textbullet{} MongoDB}
+\end{cvskills}
+
+\cvsection{Certifications}
+
+\begin{cvskills}
+  \cvskill{CKA}{Certified Kubernetes Administrator -- Linux Foundation}
+  \cvskill{LFCS}{Linux Foundation Certified Sysadmin}
+  \cvskill{AWS}{Containerized Applications on AWS}
+  \cvskill{Cisco}{Ansible for Network Automation}
+\end{cvskills}
+
+\cvsection{Languages}
+
+\begin{cvskills}
+  \cvskill{English}{C1 Professional}
+  \cvskill{German}{B1}
+  \cvskill{Urdu}{Native}
+\end{cvskills}
+
+\end{document}

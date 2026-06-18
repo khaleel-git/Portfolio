@@ -1,0 +1,52 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.4cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{Werkstudent {\enskip\cdotp\enskip} Software Development {\enskip\cdotp\enskip} Python {\enskip\cdotp\enskip} Data}
+\address{Berlin, Germany (Remote)}
+\mobile{+49 155 63611714}
+\email{khaleel.eu@gmail.com}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\recipient
+  {Hiring Team}
+  {Knuddels GmbH \& Co.\ KG, Karlsruhe}
+
+\letterdate{\today}
+\lettertitle{Unsolicited Application -- Working Student Software Development (m/f/d)}
+\letteropening{Dear Knuddels Team,}
+\letterclosing{Sincerely,}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter{}{Khaleel Ahmad~~~\cdotp~~~Cover Letter}{}
+\makelettertitle
+
+\begin{cvletter}
+
+\lettersection{Why Knuddels}
+Keeping a 25-year-old community platform genuinely alive -- growing it, securing it, and making it more human -- with a team of just 50 people is a rare engineering challenge. What stands out to me is not just the technical ambition but the purpose behind it: a platform built around real connection rather than content consumption, actively cooperating with the BKA to protect its members. That combination of engineering and responsibility is the kind of environment I want to contribute to as a working student.
+
+\lettersection{What I Bring}
+I am currently enrolled in an M.S.\ in Artificial Intelligence at BTU Cottbus-Senftenberg and bring 3+ years of production engineering experience -- well beyond what is typical at Werkstudent level. At Ericsson I built Python-based data pipelines and automation tools processing \textbf{12,000+ structured files daily} on AWS, working extensively with PostgreSQL and MSSQL for data modeling and reporting. I have hands-on experience with Docker, Linux, Git, REST APIs, and CI/CD-adjacent automation workflows. I am comfortable working independently and self-organizing across distributed teams -- exactly the culture Knuddels describes. On the data side, I can contribute to backend data components, pipeline automation, and analytics support from day one. I am also actively learning TypeScript and React through my M.S.\ coursework, expanding toward Knuddels' frontend stack.
+
+\lettersection{Fit}
+I am available for up to 20 hours per week during semester, fully remote-capable, and based in Berlin. I work independently, take ownership, and thrive in flat, transparent team cultures. I would welcome the chance for you to find the right spot for me in your team -- whether that is backend data work, automation, or broader software development support.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}

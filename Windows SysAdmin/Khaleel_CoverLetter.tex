@@ -1,0 +1,55 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.4cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+\fontdir[fonts/]
+\definecolor{awesome}{HTML}{1F3A5F}
+\colorlet{awesome}{awesome}
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\photo[circle,noedge,left]{profile}
+\name{Khaleel}{Ahmad}
+\position{IT System Administrator {\enskip\cdotp\enskip} Linux \& Windows {\enskip\cdotp\enskip} Cloud Infrastructure}
+\address{Berlin, Germany}
+\mobile{(+49) 155 63611714}
+\email{khaleel.eu@gmail.com}
+\homepage{https://khaleel.eu}
+\github{khaleel-git}
+\linkedin{khaleel-ahmad}
+
+\recipient
+  {Howmet Fastening Systems Hildesheim}
+  {Hildesheim, Germany}
+
+\letterdate{\today}
+\lettertitle{Application for IT Site Administrator (m/w/d)}
+\letteropening{Dear Hiring Team,}
+\letterclosing{Sincerely,}
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+\begin{document}
+
+\makecvheader[R]
+\makecvfooter{}{Khaleel Ahmad~~~\cdotp~~~Cover Letter}{}
+\makelettertitle
+
+\begin{cvletter}
+
+\lettersection{Motivation}
+Howmet's focus on precision manufacturing and the critical infrastructure that supports it is exactly the kind of environment where reliable IT administration makes a real difference. The IT Site Administrator role covers a broad technical scope -- server administration, network management, virtualization, user support, and compliance -- which matches my background across both Windows and Linux environments.
+
+\lettersection{Experience}
+At Ericsson, I managed VMware ESXi 6/7 and vCenter infrastructure at the Jazz data center in Lahore, handling VM provisioning, RAID configuration, Active Directory integration, and HPE iLO remote access. I administered Windows and Linux servers across production environments, managed user access and IAM policies, and wrote Ansible playbooks for automated system configuration. At Hello App, I administered 50+ servers across multiple cloud platforms handling SSL, DNS, network configuration, firewall rules, patch management, and end-user support. I have hands-on experience with virtualization (VMware, Hyper-V), network technologies (VLANs, switching, firewalls), Active Directory, and Office 365 administration. I am comfortable with both Level 1 and Level 2 support, ticket-based workflows, and working with external service providers.
+
+\lettersection{Fit}
+I am available full-time and open to relocating to Hildesheim. My English is C1 and my German is B1, improving actively. I work independently, document clearly, and take end-to-end ownership of systems. I hold a Certified Kubernetes Administrator (CKA) and Linux Foundation Certified Sysadmin (LFCS) certification and have extensive experience maintaining infrastructure in compliance-aware environments. I would welcome the chance to bring this background to the Howmet Hildesheim team.
+
+\end{cvletter}
+
+\makeletterclosing
+
+\end{document}

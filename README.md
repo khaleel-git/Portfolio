@@ -10,7 +10,6 @@ This repo contains CV and cover letter templates built with [Awesome CV](https:/
 
 Pick the role folder that matches your target position (e.g., `devops/`, `data-engineer/`, `linux-sysadmin/`). Each contains:
 - `YourName_CV.tex` – Full CV
-- `YourName_Resume.tex` – One-page resume
 - `YourName_CoverLetter.tex` – Cover letter template
 - `profile.jpg` – Professional photo (included in some folders)
 
